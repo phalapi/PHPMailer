@@ -1,6 +1,9 @@
 <?php
 namespace PhalApi\PHPMailer;
 
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
 /**
  * 邮件工具类
  *
@@ -27,8 +30,6 @@ namespace PhalApi\PHPMailer;
  * @author dogstar <chanzonghuang@gmail.com> 2015-2-14
  */
 
-require_once dirname(__FILE__) . DIRECTORY_SEPARATOR . 'PHPMailer' . DIRECTORY_SEPARATOR . 'PHPMailerAutoload.php';
-
 class Lite
 {
     protected $debug;
@@ -51,7 +52,7 @@ class Lite
      */
     public function send($addresses, $title, $content, $isHtml = TRUE)
     {
-        $mail = new \PHPMailer;
+        $mail = new PHPMailer;
         $cfg = $this->config;
 
         $mail->isSMTP();
