@@ -1,0 +1,27 @@
+{
+    "name": "phalapi/phpmailer",
+    "description": "PhalApi 2.x扩展类库，基于PHPMailer的邮件发送。",
+    "type": "library",
+    "keywords": [
+        "phalapi", "phalapi-phpmailer", "phpmailer"
+    ],
+    "license": "GPL-3.0+",
+    "homepage": "https://www.phalapi.net/",
+    "authors": [
+        {
+            "name": "dogstar huang",
+            "email": "chanzonghuang@gmail.com",
+            "homepage": "http://my.oschina.net/dogstar",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3",
+        "phalapi/kernal": "2.0.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "PhalApi\\PHPMailer\\": "src"
+        }
+    } 
+}
