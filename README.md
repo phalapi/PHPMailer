@@ -40,7 +40,7 @@ $di->mailer = function() {
 ## 使用
 如下代码示例：
 ```php
-\PhalApi\DI()->$mailer->send('chanzonghuang@gmail.com', 'Test PHPMailer Lite', 'something here ...');
+\PhalApi\DI()->mailer->send('chanzonghuang@gmail.com', 'Test PHPMailer Lite', 'something here ...');
 ```
 
 稍候将会收到：
