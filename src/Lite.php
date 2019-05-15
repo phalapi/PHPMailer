@@ -57,6 +57,7 @@ class Lite
 
         $mail->isSMTP();
         $mail->Host = $cfg['host'];
+        $mail->Port = $cfg['port'];
         $mail->SMTPAuth = true;
         $mail->Username = $cfg['username'];
         $mail->Password = $cfg['password'];
