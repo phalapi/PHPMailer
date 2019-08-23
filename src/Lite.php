@@ -62,7 +62,7 @@ class Lite
         $mail->Username = $cfg['username'];
         $mail->Password = $cfg['password'];
         $mail->CharSet = 'utf-8';
-
+        $mail->SMTPSecure = $cfg['Secure'];
         $mail->From = $cfg['username'];
         $mail->FromName = $cfg['fromName'];
         $addresses = is_array($addresses) ? $addresses : array($addresses);
