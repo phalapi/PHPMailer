@@ -3,13 +3,14 @@
 return array(
     'PHPMailer' => array(
         'email' => array(
-            'host' => 'smtp.gmail.com',
-            'username' => 'XXX@gmail.com',
-            'password' => '******',
-            'port' => 25, // 端口
-            'from' => 'XXX@gmail.com',
-            'fromName' => 'PhalApi团队',
-            'sign' => '<br/><br/>请不要回复此邮件，谢谢！<br/><br/>-- PhalApi团队敬上 ',
+            'host' => 'smtp.yeah.net',
+            'port'=>'465',//服务器端口
+            'Secure'=>'ssl',//ssl链接
+            'username' => 'xxxxx@yeah.net',
+            'password' => 'xxxxxxx',
+            'from' => 'xxxxxx@yeah.net',
+            'fromName' => 'xxxxxxxx',
+            'sign' => '<br/><br/>请不要回复此邮件，谢谢！<br/><br/>-- xxxxxx ',
         ),
     ),
 );
