@@ -13,6 +13,8 @@ PhalApi 2.x扩展类库，基于PHPMailer的邮件发送。
     'PHPMailer' => array(
         'email' => array(
             'host' => 'smtp.gmail.com',
+            'port' => 465,
+            'Secure' => 'ssl',
             'username' => 'XXX@gmail.com',
             'password' => '******',
             'from' => 'XXX@gmail.com',
